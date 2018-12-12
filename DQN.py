@@ -26,7 +26,6 @@ class Net(nn.Module):
         actions_value = self.out(x)
         return actions_value
 
-
 class DQN(object):
     def __init__(self):
         self.eval_net, self.target_net = Net(), Net()
